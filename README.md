@@ -6,25 +6,9 @@ A standalone release candidate of U-GAP for medical question answering: uncertai
 
 ## Method
 
-```mermaid
-flowchart TD
-    Q[Question and candidate labels] --> U[Llama3 candidate-label entropy]
-    U -->|confident| D[No-evidence argmax prediction]
-    U -->|uncertain| P[Qwen3 query planning]
-    P --> R[MedCPT retrieval, RRF and cross-encoder ranking]
-    R --> S[Evidence set construction and initial ESA]
-    S --> C[Gap-aware candidate-pool check and reconstruction]
-    C --> B[Bridge retrieval if executable, then final ESA]
-    B --> F[Final-evidence Reader]
-    B -->|second-pass insufficient| G[Five generated backgrounds and G5 Reader]
-    F --> A[Compare Final and G5 predictions when available]
-    G --> A
-    A -->|agree or no G5| K[Keep available prediction]
-    A -->|disagree| X[Conflict-aware Reader: retrieved and generated sources]
-    D --> O[Final prediction]
-    K --> O
-    X --> O
-```
+<p align="center">
+  <img src="assets/method_figure.png" width="900">
+</p>
 
 The diagram is schematic: already-sufficient evidence skips gap correction; absent executable gaps and failed analyses follow explicit fallbacks. Cross-encoder gap scores are relevance proxies, **not** entailment or sufficiency labels. Pool reconstruction does not add another immediate Qwen ESA call. There is at most one Bridge retrieval round.
 
