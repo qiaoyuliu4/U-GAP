@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">U-GAP framework</title>
+  <desc id="desc">Uncertainty gate followed by evidence-gap retrieval, final reading, generated background and conflict-aware fusion.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#334155"/>
+    </marker>
+    <style>
+      .box { fill:#f8fafc; stroke:#334155; stroke-width:2; rx:10; }
+      .accent { fill:#ecfeff; stroke:#0f766e; stroke-width:2; rx:10; }
+      .aux { fill:#fff7ed; stroke:#c2410c; stroke-width:2; rx:10; }
+      .text { font: 20px sans-serif; fill:#0f172a; text-anchor:middle; }
+      .small { font: 16px sans-serif; fill:#334155; text-anchor:middle; }
+      .line { stroke:#334155; stroke-width:2.5; fill:none; marker-end:url(#arrow); }
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="white"/>
+  <text x="600" y="42" class="text" font-weight="700">U-GAP: Uncertainty-Gated Evidence-Gap Medical RAG</text>
+  <rect x="460" y="70" width="280" height="66" class="box"/>
+  <text x="600" y="99" class="text">Question + labels</text><text x="600" y="122" class="small">Llama3 candidate-label scores</text>
+  <path d="M600 136 L600 174" class="line"/>
+  <rect x="430" y="174" width="340" height="72" class="accent"/>
+  <text x="600" y="205" class="text">Uncertainty Gate</text><text x="600" y="229" class="small">normalized entropy threshold</text>
+  <path d="M430 210 L245 210 L245 282" class="line"/><text x="330" y="197" class="small">confident</text>
+  <path d="M770 210 L955 210 L955 282" class="line"/><text x="870" y="197" class="small">uncertain</text>
+  <rect x="95" y="282" width="300" height="72" class="box"/>
+  <text x="245" y="313" class="text">No-RAG prediction</text><text x="245" y="337" class="small">greedy label selection</text>
+  <rect x="805" y="282" width="300" height="72" class="box"/>
+  <text x="955" y="313" class="text">Fresh Evidence-Gap RAG</text><text x="955" y="337" class="small">planning, retrieval, ESA, Bridge</text>
+  <path d="M955 354 L955 404" class="line"/>
+  <rect x="805" y="404" width="300" height="72" class="accent"/>
+  <text x="955" y="435" class="text">Final Evidence Reader</text><text x="955" y="459" class="small">Direct instructions + evidence</text>
+  <path d="M955 476 L955 530" class="line"/>
+  <rect x="805" y="530" width="300" height="72" class="aux"/>
+  <text x="955" y="561" class="text">G5 + conflict-aware fusion</text><text x="955" y="585" class="small">only for unresolved second pass</text>
+  <path d="M395 318 L540 318 L540 650 L600 650" class="line"/>
+  <path d="M805 440 L650 440 L650 650 L600 650" class="line"/>
+  <path d="M805 566 L700 566 L700 650 L600 650" class="line"/>
+  <rect x="455" y="650" width="290" height="50" class="box"/>
+  <text x="600" y="682" class="text">Final prediction + route trace</text>
+</svg>

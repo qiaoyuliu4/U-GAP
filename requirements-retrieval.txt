@@ -1,0 +1,11 @@
+# Separate legacy MedRAG dense-retrieval environment, Python 3.10/3.11.
+# Do not install this file into the Qwen3 environment.
+torch==2.4.1
+torchvision==0.19.1
+transformers==4.44.2
+sentence-transformers==2.2.2
+huggingface-hub==0.25.2
+numpy==1.26.4
+faiss-cpu==1.7.4
+tqdm==4.67.1
+sentencepiece==0.2.0

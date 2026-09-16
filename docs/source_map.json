@@ -1,0 +1,86 @@
+[
+  {
+    "file": "action/answer.py",
+    "origin": "research implementation/action/answer.py"
+  },
+  {
+    "file": "src/answer_decoding.py",
+    "origin": "research implementation/src/answer_decoding.py"
+  },
+  {
+    "file": "src/conflict_aware_generation_fusion.py",
+    "origin": "research implementation/src/conflict_aware_generation_fusion.py"
+  },
+  {
+    "file": "src/evidence_analysis_reader.py",
+    "origin": "research implementation/src/evidence_analysis_reader.py"
+  },
+  {
+    "file": "src/evidence_gap.py",
+    "origin": "research implementation/src/evidence_gap.py"
+  },
+  {
+    "file": "src/evidence_gap_models.py",
+    "origin": "research implementation/src/evidence_gap_models.py"
+  },
+  {
+    "file": "src/medrag_snippet_retriever.py",
+    "origin": "research implementation/src/medrag_snippet_retriever.py"
+  },
+  {
+    "file": "src/parametric_generation_diagnostic.py",
+    "origin": "research implementation/src/parametric_generation_diagnostic.py"
+  },
+  {
+    "file": "src/parametric_generation_multidoc.py",
+    "origin": "research implementation/src/parametric_generation_multidoc.py"
+  },
+  {
+    "file": "src/parametric_generation_second_pass.py",
+    "origin": "research implementation/src/parametric_generation_second_pass.py"
+  },
+  {
+    "file": "src/promptTemplate.py",
+    "origin": "research implementation/src/promptTemplate.py"
+  },
+  {
+    "file": "src/selected_evidence_retriever.py",
+    "origin": "research implementation/src/selected_evidence_retriever.py"
+  },
+  {
+    "file": "src/uncertainty_gate.py",
+    "origin": "research implementation/src/uncertainty_gate.py"
+  },
+  {
+    "file": "src/utils.py",
+    "origin": "research implementation/src/utils.py"
+  },
+  {
+    "file": "tools/export_medrag_snippets.py",
+    "origin": "research implementation/tools/export_medrag_snippets.py"
+  },
+  {
+    "file": "tools/rerank_medrag_snippets.py",
+    "origin": "research implementation/tools/rerank_medrag_snippets.py"
+  },
+  {
+    "file": "tools/run_evidence_gap_rag.py",
+    "origin": "research implementation/tools/run_evidence_gap_rag.py"
+  },
+  {
+    "file": "tools/run_final_method_end_to_end.py",
+    "origin": "research implementation/tools/run_final_method_end_to_end.py"
+  },
+  {
+    "file": "tools/run_final_prompt_control.py",
+    "origin": "research implementation/tools/run_final_prompt_control.py"
+  },
+  {
+    "file": "tools/run_parametric_generation_second_pass.py",
+    "origin": "research implementation/tools/run_parametric_generation_second_pass.py"
+  },
+  {
+    "file": "tools/run_uncertainty_gated_reader.py",
+    "origin": "research implementation/tools/run_uncertainty_gated_reader.py"
+  }
+]

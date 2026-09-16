@@ -1,0 +1,17 @@
+LICENSING STATUS: PENDING UPSTREAM PERMISSION
+
+This release candidate contains code derived from KGARevion:
+https://github.com/mims-harvard/KGARevion
+
+On 2026-09-15, the upstream repository listing did not show a LICENSE file,
+and the main/LICENSE URL returned HTTP 404. This package does not infer a
+redistribution license from the repository being public.
+
+No blanket MIT, Apache, or other open-source grant is asserted here.
+Before public distribution, obtain or locate the applicable upstream permission,
+retain its exact copyright/license notices, and specify the licensing terms for
+the U-GAP additions. This file records an unresolved release requirement; it is
+not an open-source license and does not relicense upstream material.
+
+Models, benchmarks, corpus text and indexes are not included. Their respective
+licenses and access conditions apply independently. See THIRD_PARTY_NOTICES.md.
